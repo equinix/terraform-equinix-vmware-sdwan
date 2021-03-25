@@ -79,9 +79,9 @@ module "vmware-sdwan" {
 |notifications|List of email addresses that will receive notifications about device|`list(string)`|n/a|yes|
 |acl_template_id|Identifier of a network ACL template that will be applied on a device|`string`|`""`|yes|
 |additional_bandwidth|Amount of additional internet bandwidth for a device, in Mbps|`number`|`0`|no|
-|activationKey|Activation Key|`string`|`""`|yes
-|controllerFqdn|SD-WAN controller FQDN|`string`|`""`|yes
-|rootPassword|Device root password|`string`|`""`|no
+|activation_key|Activation Key|`string`|`""`|yes
+|controller_fqdn|SD-WAN controller FQDN|`string`|`""`|yes
+|root_password|Device root password|`string`|`""`|no
 |secondary|Map of secondary device attributes in redundant setup|`map`|N/A|no|
 
 Secondary device map attributes:
@@ -93,9 +93,9 @@ Secondary device map attributes:
 |account_number|Billing account number for a device. If not provided, active account for a device metro code will be used|`string`|`0`|no|
 |acl_template_id|Identifier of a network ACL template that will be applied on a secondary device|`string`|`""`|yes|
 |additional_bandwidth|Amount of additional internet bandwidth for a secondary device, in Mbps|`number`|`0`|no|
-|activationKey|Activation Key|`string`|`""`|yes
-|controllerFqdn|SD-WAN controller FQDN|`string`|`""`|yes
-|rootPassword|Device root password|`string`|`""`|no
+|activation_key|Activation Key|`string`|`""`|yes
+|controller_fqdn|SD-WAN controller FQDN|`string`|`""`|yes
+|root_password|Device root password|`string`|`""`|noo
 
 ## Outputs
 
