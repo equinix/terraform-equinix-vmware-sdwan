@@ -5,7 +5,7 @@ provider "equinix" {
 
 module "vmware-sdwan" {
   source               = "equinix/vmware-sdwan/equinix"
-  version              = "1.0.0-beta"
+  version              = "1.0.0"
   name                 = "tf-vmware-sdwan"
   metro_code           = var.metro_code_primary
   platform             = "medium"
